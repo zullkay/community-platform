@@ -7,8 +7,7 @@ use strict;
 use warnings;
 use feature "say";
 
-# TODO: need final location
-my $upload_meta = "/home/ddgc/community-platform/upload/all_meta.json";
+my $upload_meta = "/home/ddgc/cache/all_meta.json";
 
 die unless (-f $upload_meta);
 
@@ -63,7 +62,3 @@ for my $ia (@{$meta}) {
 
 
 }
-
-# TODO
-# unlink("/home/ddgc/community-platform/upload/all_meta.json");
-
