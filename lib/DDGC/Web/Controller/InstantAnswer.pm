@@ -651,21 +651,23 @@ sub save_edit :Chained('base') :PathPart('save') :Args(0) {
                                     $value = $value? from_json($value) : undef;
                                 }
                                 
-                                $result = {$field => $value};
                             }
                             catch {
                                 $c->d->errorlog("Error updating the database");
                             };
+                        
+                            $result = {$field => $ia->{$field}};
                         }
                     }
                 } else {
                     try {
                         $ia->update({$field => $value});
-                        $result = {$field => $value};
                     }
                     catch {
                         $c->d->errorlog("Error updating the database");
                     };
+                        
+                    $result = {$field => $ia->{$field}};
                 }
             } else {
                 my $can_add = 0;
