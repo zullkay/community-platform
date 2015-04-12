@@ -146,48 +146,26 @@ sub dev_pipeline_json :Chained('dev_pipeline_base') :PathPart('json') :Args(0) {
     my $rs = $c->d->rs('InstantAnswer');
 
     if ($view eq 'dev') {
-        my @planning = $rs->search(
-            {'me.dev_milestone' => { '=' => 'planning'}},
-            {
-                columns => [ qw/ name id meta_id repo dev_milestone producer designer developer/ ],
-                order_by => [ qw/ name/ ],
-                result_class => 'DBIx::Class::ResultClass::HashRefInflator',
-            }
-        )->all;
+        my @planning;
+        my @in_development;
+        my @qa;
+        my @ready;
 
-        my @in_development = $rs->search(
-            {'me.dev_milestone' => { '=' => 'in_development'}},
-            {
-                columns => [ qw/ name id meta_id repo dev_milestone producer designer developer/ ],
-                order_by => [ qw/ name/ ],
-                result_class => 'DBIx::Class::ResultClass::HashRefInflator',
-            }
-        )->all;
+        my @dev_ias = $rs->search({
+            'me.dev_milestone' => { '!=' => 'live'},
+            'me.dev_milestone' => { '!=' => 'deprecated'}});
 
-        my @qa = $rs->search(
-            {'me.dev_milestone' => { '=' => 'qa'}},
-            {
-                columns => [ qw/ name id meta_id repo dev_milestone producer designer developer/ ],
-                order_by => [ qw/ name/ ],
-                result_class => 'DBIx::Class::ResultClass::HashRefInflator',
-            }
-        )->all;
+        my %iah;
+        for my $ia (@dev_ias) {
+            my %temp_ia;
+            $temp_ia{ia} = $ia->TO_JSON('for_endpt');
+            $temp_ia{ia}{can_edit} = $ia->users->find($c->user->id) || $c->user->admin;
 
-        my @ready = $rs->search(
-            {'me.dev_milestone' => { '=' => 'ready'}},
-            {
-                columns => [ qw/ name id meta_id repo dev_milestone producer designer developer/ ],
-                order_by => [ qw/ name/ ],
-                result_class => 'DBIx::Class::ResultClass::HashRefInflator',
-            }
-        )->all;
+            push @{$iah{$ia->dev_milestone}}, $temp_ia{ia};
 
-        $c->stash->{x} = {
-            planning => \@planning,
-            in_development => \@in_development,
-            qa => \@qa,
-            ready => \@ready,
-        };
+        }
+
+        $c->stash->{x} = \%iah;
     } elsif ($view eq 'deprecated') {
         my @fathead = $rs->search(
             {'me.repo' => { '=' => 'fathead'},
