@@ -66,8 +66,12 @@ sub getIssues{
 			$repo =~ s/zeroclickinfo-//;
 
             my $is_pr = exists $issue->{pull_request} ? 1 : 0;
-            
-			# add entry to result array
+
+            warn $issue->comments
+			
+            warn $issue_data;
+
+            # add entry to result array
 			my %entry = (
 			    name => $name_from_link || '',
 				repo => $repo || '',
@@ -83,7 +87,7 @@ sub getIssues{
             delete $pr_hash{$issue->{'number'}.$issue->{repo}};
 		}
 	}
-    # warn Dumper @results;
+     warn Dumper @results;
     # warn Dumper %pr_hash;
 }
 
@@ -93,7 +97,7 @@ my $merge_files = sub {
     PR: while ( my ($pr, $data) = each %pr_hash){
         $gh->set_default_user_repo('duckduckgo', "zeroclickinfo-$data->{repo}");
         my $pr = $gh->pull_request->pull($data->{issue_id});
-
+        warn Dumper $pr;
         # closed PRs have undef merged_at.  Merged ones have the date
         next PR unless $pr->{merged_at};
         
