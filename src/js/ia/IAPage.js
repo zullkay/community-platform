@@ -160,14 +160,8 @@
                             var type = $.trim($available_types.find("option:selected").text());
                             var username = $.trim($dev_username.val());
 
-                            if (username && type && (type !== "ddg")) {
+                            if (username && type) {
                                 usercheck(type, username, $available_types, $dev_username);
-                            } else if (type && (type === "ddg")) {
-                                $dev_username.val("http://www.duckduckhack.com");
-                                $parent.find(".developer input").val("DDG Team");
-                                $dev_username.parent().removeClass("invalid");
-                                $available_types.parent().removeClass("invalid");
-
                             }
                         }
                     });
