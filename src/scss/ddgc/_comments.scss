@@ -1,17 +1,17 @@
 /* girl lookit' that body */
-.comment-body, 
-.thread-header, 
-.thread, 
-.idea, 
-.idea-header, 
-.idea__votes, 
-.uploaded, 
+.comment-body,
+.thread-header,
+.thread,
+.idea,
+.idea-header,
+.idea__votes,
+.uploaded,
 .uploaded__link,
 .notification__comment,
 .comment .my_comment.comment-body,
 .comment--deep > .comment-body > .row.content {
     border: 1px solid #cacaca;
-    position: relative;		
+    position: relative;
     z-index: 1;
     background: #fff;
     -moz-border-radius: 5px;
@@ -30,10 +30,10 @@
 .forum-nav {
 	float: left;
 }
-.head--forum { 
+.head--forum {
 	text-align: center;
 	padding-top: 0;
-	padding-bottom: 8px;	
+	padding-bottom: 8px;
 	margin-top: -2px;
 }
 	.content-box__head.head--forum {
@@ -53,7 +53,7 @@
 .forum-item {
     position: relative;
     padding-top: 8px;
-    padding-left: 16px; 
+    padding-left: 16px;
     padding-bottom: 4px;
 }
     .forum-item__title-wrap,
@@ -63,9 +63,9 @@
                 white-space: nowrap;
                 text-overflow: ellipsis;
 	}
-	
-	.forum-item__title { 
-		display: block; 		
+
+	.forum-item__title {
+		display: block;
 	}
         .forum-item__title:visited { color: #5433b3; }
     .forum-item__title .icon {
@@ -81,29 +81,29 @@
         float: right;
 		position: relative;
 		top: -2px;
-        right: 0;		
+        right: 0;
 		margin-left: 5px;
     }
-    .forum-item__reply-count { 
-        color: #7a7b80; 
+    .forum-item__reply-count {
+        color: #7a7b80;
         float: right;
     }
 	.reply-count {
 		display: block;
 		line-height: 1.2;
 		font-size: 13px;
-		padding-top: 4px;		
+		padding-top: 4px;
 	}
 		.reply-count__icon {
 			font-size: 80%;
 			color: #d9d9d9;
 		}
-	
+
 	.reply-count,
 	.reply-info {
 		text-align: right;
-	}	
-	@media only screen and (max-width: 40em) {	
+	}
+	@media only screen and (max-width: 40em) {
 		.reply-count,
 		.reply-info {
 			text-align: left;
@@ -112,7 +112,7 @@
 /*
 	Forum Sorting
 */
-	
+
 .sorting {
 	display: block;
 	position: relative;
@@ -134,13 +134,13 @@
 			font-size: 12px;
 			opacity: 1;	/* countering the disabled opacity, should be fixed in ddgc_static */
 		}
-	
-	
+
+
 /*
     Thread View
 */
 .thread-wrap {
-    position: relative;   
+    position: relative;
 }
 .thread {
     margin-bottom: 18px;
@@ -157,7 +157,7 @@
     padding-bottom: 10px;
     padding-left: 10px;
     background-color: #f3f3f3;
-    margin-bottom: 13px;    
+    margin-bottom: 13px;
 }
 	.thread-title h1,
 	.thread-title h2,
@@ -165,30 +165,30 @@
 	.idea-title h2{
 		line-height: 1.2;
 	}
-	.thread-title__icon, 
-	.idea-title__icon { 
+	.thread-title__icon,
+	.idea-title__icon {
 		margin-top: 2px;
-		color: #b1b2b6; 
+		color: #b1b2b6;
 	}
-	
+
 .thread-header, .thread, .uploaded, .uploaded--title {
-    margin-left: -22px;    
+    margin-left: -22px;
 }
 
-.thread-title {    
+.thread-title {
     margin: 0 60px 0 0;
 }
 	.thread-title h1 {
         text-align: left;
         font-size: 16px;
         font-weight: bold;
-        margin: 0;		
+        margin: 0;
     }
     .thread-title h2 {
         font-size: 14px;
         margin: 0;
     }
-    
+
 .thread-icons {
     position: absolute;
     top: 0.35em;
@@ -196,9 +196,9 @@
     font-size: 1.3em;
 }
     .thread-icon { color: #b1b2b6; }
-    .thread-icon--good { color: #48af04; }    
+    .thread-icon--good { color: #48af04; }
     .thread-icon--stuck { color: #4b8df8;}
-    
+
 .thread__user {
     position: relative;
     display: table-cell;
@@ -212,27 +212,27 @@
     -moz-border-radius: 5px 0 0 5px;
     -webkit-border-radius: 5px 0 0 5px;
     border-radius: 5px 0 0 5px;
-}    
-    .thread__body { 
+}
+    .thread__body {
 		display: block;
-		/* 
-			prevent breakage on preformatted posts 
-			needed because the parent is set to 'display: table', 
+		/*
+			prevent breakage on preformatted posts
+			needed because the parent is set to 'display: table',
 			so max-width is ignored.
 		*/
-		max-width: 43em; 
+		max-width: 43em;
 	}
-    .thread__body--scroll { 
+    .thread__body--scroll {
         display: block;
-        overflow: auto; 
+        overflow: auto;
         max-height: 14em;
         position: relative;
-        left: 16px;        
+        left: 16px;
     }
-        .thread__body--scroll .thread-content { padding-left: 0; }    
-    
-    .thread__user img { 
-        display: block; 
+        .thread__body--scroll .thread-content { padding-left: 0; }
+
+    .thread__user img {
+        display: block;
         margin: 0 auto;
     }
 	.thread__user .userbadge {
@@ -243,8 +243,8 @@
 		right: 0;
 		left: 0;
 	}
-    .thread__user .user-name, .uploaded__name { 
-        font-size: 0.85em;        
+    .thread__user .user-name, .uploaded__name {
+        font-size: 0.85em;
         display: block;
         text-align: center;
         width: 95%;
@@ -252,10 +252,10 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-    } 
-    
+    }
+
 .thread__foot {
-    position: relative; 
+    position: relative;
     left: 21px;
     margin-left: -21px;
     border-top: 1px solid #d9d9d9;
@@ -263,8 +263,8 @@
     -webkit-border-radius: 0 0 5px 0;
     border-radius: 0 0 5px 0;
 }
-    
-.thread__user, .thread-content {    
+
+.thread__user, .thread-content {
     padding-bottom: 18px;
 }
 .thread-content {
@@ -293,7 +293,7 @@
 		display: inline-block;
 		color: #515358;
 		padding: 5px;
-		margin: 5px;		
+		margin: 5px;
 		position: relative;
 	}
 		.uploaded__name,
@@ -362,7 +362,7 @@
     }
     .idea__icon {
         position: absolute;
-        top: 12px;
+        top: 15px;
         left: -8px;
         color: #d9d9d9;
         font-size: 18px;
@@ -370,12 +370,12 @@
     .idea-header--controls {
         padding-right: 10px;
     }
-        .idea-header__form-label { 
-            line-height: 32px; 
+        .idea-header__form-label {
+            line-height: 32px;
             float: left;
             padding-right: 13px;
         }
-    
+
     .idea__votes {
         background-color: #f7f7f7;
         padding: 13px;
@@ -387,7 +387,7 @@
             margin-right: 0;
             margin-left: 18px;
         }
-    
+
     .idea-header {
         padding-top: 5px;
         padding-bottom: 5px;
@@ -399,7 +399,7 @@
             border-radius: 5px 5px 0 0;
         }
     .idea-title__text, .idea-title__icon { padding-top: 5px; padding-bottom: 5px; }
-    
+
     .idea-title h1 {
         text-align: left;
         font-size: 20px;
@@ -408,10 +408,10 @@
     }
     .idea-title h2 {
         font-size: 16px;
-        margin: 0;   
+        margin: 0;
     }
-        .idea-title__icon { 
-            font-size: 20px; 
+        .idea-title__icon {
+            font-size: 20px;
             margin-right: 0.5em;
             float: left;
         }
@@ -419,7 +419,7 @@
             display: block;
             overflow: hidden;
         }
-    
+
     /* idea status tag */
     .tag.idea-status {
         border: none;
@@ -438,7 +438,7 @@
 
 	/*.blog-content .comment.tier1 { margin-right: 4px; }*/
 	.comment.row .comment.row { margin: 0 auto 2px; }
-	.comment .user-avatar, .comment_reply .user-avatar{ 
+	.comment .user-avatar, .comment_reply .user-avatar{
 		width: 48px;
 		height: 48px;
 		line-height: 48px;
@@ -446,24 +446,24 @@
 		position: absolute;
 		top: 8px;
 		left: 0;
-		float: none; 
+		float: none;
 	}
-		.comment .comment .user-avatar, .comment .comment-body .comment_reply .user-avatar { 
-			width: 32px; 
-			height: 32px; 
-			line-height: 32px; 
-			font-size: 150%; 
+		.comment .comment .user-avatar, .comment .comment-body .comment_reply .user-avatar {
+			width: 32px;
+			height: 32px;
+			line-height: 32px;
+			font-size: 150%;
 			left: 14px;
 			top: 9px;
 		}
 		.lt-ie9 .comment .comment .user-avatar img, .lt-ie9 .comment .comment-body .comment_reply .user-avatar img { height: 32px; }
-		
-	.comment-meta, .comment-foot a, .thread__foot a { 		
+
+	.comment-meta, .comment-foot a, .thread__foot a {
 		color: #7a7b80;
 		font-size: 0.85em;
-	}		
+	}
 		.comment-meta {
-			display: block; 
+			display: block;
 			line-height: 1;
 			margin: 4px auto 8px;
 			position: relative;
@@ -474,25 +474,25 @@
 			.comment-meta a:hover {
 				color: #000;
 			}
-			
+
 		.comment-meta .comment-toggle {
-			color: #d8d8d8;			
-			font-size: 1.5em;			
+			color: #d8d8d8;
+			font-size: 1.5em;
 			margin-top: -6px;
 			display: inline-block;
 			height: 12px;
 			overflow:visible;
-			
-			position: relative;			
+
+			position: relative;
 			left: 6px;
 			top: 3px;
-				
+
 		}
 			.comment-meta .comment-toggle:hover {
-				color: #b8b8b8;	
+				color: #b8b8b8;
 			}
 			.comment-meta .comment-toggle:active {
-				color: #a8a8a8;	
+				color: #a8a8a8;
 			}
 		.voting + .comment-body .comment-meta { padding-right: 5px; }
 	.comment-foot {
@@ -502,15 +502,15 @@
     }
     .comment-foot, .thread__foot {
 		overflow: hidden;
-		background: #f3f3f3;		
+		background: #f3f3f3;
 		-webkit-box-shadow: inset 0 1px 0 #fff;
 		-moz-box-shadow: inset 0 1px 0 #fff;
 		box-shadow: inset 0 1px 0 #fff;
 	}
 		.comment.row .comment-body .comment-foot.row { padding: 0; border-top: 1px solid #d9d9d9; }
-		.comment-foot a, .thread__foot a {			
+		.comment-foot a, .thread__foot a {
 			line-height: 34px;
-			padding: 0 14px 0 18px;			
+			padding: 0 14px 0 18px;
 			height: 34px;
 			display: block;
 			float: left;
@@ -529,57 +529,57 @@
                 margin-right: -1px;
             }
 			.comment-foot a:hover, .thread__foot a:hover { background: #fff; }
-			.comment-foot__icon, .thread__foot__icon, .comment-foot a .icon-search, .comment-foot a .icon-bubble { 
-				color: #b1b2b6; 
+			.comment-foot__icon, .thread__foot__icon, .comment-foot a .icon-search, .comment-foot a .icon-bubble {
+				color: #b1b2b6;
 				font-size: 1.3em;
 				position: relative;
 				left: -6px;
 				top: 2px;
 			}
-			
+
 		.comment-foot .comment-meta {
-			display: inline-block; 
-			margin: 0 0 0 16px;			
+			display: inline-block;
+			margin: 0 0 0 16px;
 			line-height: 34px;
-		}	
+		}
     .comment-deleted  { font-style: italic; }
     .comment-body { margin: 0 0 0 71px; }
 		.voting + .comment-body { margin-right: 34px; }
 		.comment-body .comment-body { margin-left: 49px; }
 		.comment.row .comment-body .row { padding: 8px 10px 8px 13px; }
 		.comment.row .comment-body .comment.row { padding-top: 0; }
-		.comment-body p, .comment-body .p { margin: 4px auto; color: #464749; font-size: 1.05em; }		
-		.comment-body:after, .comment-body:before { 
-			display: block; 
-			position: absolute; 
-			z-index: -1; 
-			content: ""; 
-			width: 0; 
-			height: 0;     
+		.comment-body p, .comment-body .p { margin: 4px auto; color: #464749; font-size: 1.05em; }
+		.comment-body:after, .comment-body:before {
+			display: block;
+			position: absolute;
+			z-index: -1;
+			content: "";
+			width: 0;
+			height: 0;
 			top: 21px;
-			border-bottom: 9px solid transparent; 
-			border-top: 9px solid transparent;        
+			border-bottom: 9px solid transparent;
+			border-top: 9px solid transparent;
 			border-left: 0;
-		}  
+		}
 		 .comment-body .comment-body:after, .comment-body .comment-body:before {
-			top: 17px; 
+			top: 17px;
 		 }
-		  .comment-body:before {    
-			left: -10px; 
-			border-right: 9px solid #cacaca;     
+		  .comment-body:before {
+			left: -10px;
+			border-right: 9px solid #cacaca;
 		  }
-		  .comment-body:after {    
+		  .comment-body:after {
 			left: -8px;
-			border-right: 9px solid #fff; 
+			border-right: 9px solid #fff;
 		  }
-	
-	/* 
+
+	/*
 		Comment Highlighting
-		
-		.comments--old is a wrapper that darkens all comments 
+
+		.comments--old is a wrapper that darkens all comments
 		.comment--old is singular
 	*/
-	
+
 	.comments--old .comment-body,
 	.comments--old .comment--deep > .comment-body > .row.content,
 	.comment--old > .comment-body,
@@ -590,7 +590,7 @@
 		.comment--old > .comment-body:after {
 			border-right-color: #f9f9f9;
 		}
-		
+
 	.comments--old .comment--new > .comment-body,
 	.comments--old .comment--new.comment--deep > .comment-body > .row.content{
 		background-color: #fff;
@@ -598,7 +598,7 @@
 		.comments--old .comment--new > .comment-body:after {
 			border-right-color: #fff;
 		}
-			
+
 	/* highlight user's own comments */
 	.comment--own > .comment-body,
 	.comment--own.comment--deep > .comment-body > .row.content {
@@ -610,11 +610,11 @@
 		}
 		.comment--own > .comment-body:before {
 			border-right-color: #bed6eb;
-		}		
+		}
 		.comment--own > .comment-body > .row > .comment-meta {
 			color: #40556a;
 		}
-	
+
 	/* highlight special comments */
 	.comment--highlight > .comment-body,
 	.comment--highlight.comment--deep > .comment-body > .row.content {
@@ -626,31 +626,31 @@
 		}
 		.comment--highlight > .comment-body:before {
 			border-right-color: #d9d442;
-		}		
+		}
 		.comment--highlight > .comment-body > .row > .comment-meta {
 			color: #8e8c4c;
 		}
-	
+
 	/* reset for deep nested items ... */
 	.comment--own.comment--deep > .comment-body,
-	.comment--highlight.comment--deep > .comment-body,	
+	.comment--highlight.comment--deep > .comment-body,
 	.comments--old .comment--new.comment--deep > .comment-body {
 		background: none;
 	}
 
 /* the reply field */
-		
+
 .row.tier1-new { margin-bottom: 13px; }
 .comment_reply { position: relative; }
 	.comment_reply .comment_reply { margin-top: -18px; }
 	.comment_reply .user-avatar, .comment .comment-body .comment_reply .user-avatar { left: 0; }
 	.lt-ie9 .comment .comment-body .comment_reply .user-avatar { position: absolute; top: 24px; }
-	  
-		  
+
+
 /* for display on the translation page */
 .row.comments .comment_add_title { margin: 0 0 8px; color: #8f8f8f; font-size: 1em; }
 /*.row.comments .tier1-new { margin-right: 13px; }	  */
-		  
+
 .comment .voting {
 	position: absolute;
 	top: 8px;
@@ -663,22 +663,22 @@
 		width: 26px;
 		height: 25px;
 		line-height: 25px;
-		padding: 0;		
+		padding: 0;
 		margin: 0 auto 5px;
 		font-size: 0.7em;
 	}
-	
+
 .voting .button {
 	color: #9c9c9c;
-}	
+}
 	.voting .upvote:hover, .voted .upvote.voted { color: #64bb36; }
 	.voting .downvote:hover, .voted .downvote.voted { color: #c6210e; }
-	.voted .button:before { opacity: 0.1; }	
-	.voted .button.voted:before, .voted .button:hover:before { opacity: 1; }	
+	.voted .button:before { opacity: 0.1; }
+	.voted .button.voted:before, .voted .button:hover:before { opacity: 1; }
 
-.comment .voting .votes	{ 
-	font-size: 1em; 	
-	position: absolute;	
+.comment .voting .votes	{
+	font-size: 1em;
+	position: absolute;
 	right: 34px;
 	text-align: right;
 	height: 25px;
@@ -686,17 +686,17 @@
 }
 	.comment .voting .votes.positive	{ color: #d0efbf; top: 3px; }
 	.comment .voting .votes.negative	{ color: #f1d1cd; top: 35px; }
-	
-/* the original design had the voting buttons outside the comment body 
+
+/* the original design had the voting buttons outside the comment body
    - this moves them inside (same as media query below) */
 .comment .voting { top: 5px; right: -1px; }
 	.comment .comment .voting { top: 13px; }
 	.voting + .comment-body { margin-right: 0; }
 		.voting + .comment-body p { padding-right: 13px; }
 		.voting + .comment-body .comment-meta { padding-right: 16px; }
-		
+
 .comment_add_title { margin: 18px 0 0; }
-	
+
 /* simple control of comment tiers - broken up to be easier to read and comprehend */
 .min.tier1 .comment.tier2, .min.tier1 .max-msg, .max.tier1 .min-msg { display: none; }
 .max.tier1 .comment.tier2 { display: block; }
@@ -707,9 +707,9 @@
 		.min.tier3 .max-msg, .max.tier3 .min-msg { display: none; }
 		.max.tier3 .comment.tier2 { display: block; }
 		.max.tier3 .max-msg, .min.tier3 .min-msg  { display: inline; }
-		
+
 /* generic child selectors to do the same thing */
-.min.comment > .comment-body > .comment, 
+.min.comment > .comment-body > .comment,
 .min.comment > .comment-body > .comment-foot > .comment-toggle > .max-msg,
 .max.comment > .comment-body > .comment-foot > .comment-toggle > .min-msg,
 .min.comment > .comment-body > .comment-meta > .comment-toggle { display: none; }
@@ -730,7 +730,7 @@
 		left: -9px;
 	}
 
-.tier3, .tier4 {	
+.tier3, .tier4 {
 	padding-bottom: 0 !important;
 }
 
@@ -748,7 +748,7 @@
 	/*
 	.tier3 .comment-meta {
 		padding-right: 12px;
-	}	
+	}
 	.tier3 .comment-meta .comment-toggle {
 		position: absolute;
 		right: 0;
@@ -757,7 +757,7 @@
 	}
 	*/
 .comment--deep .comment-body {
-	border: none;	
+	border: none;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
@@ -766,18 +766,18 @@
 	margin-bottom: 8px;
 }
 	.comment--deep > .comment-body > .row.content:last-child {
-		
+
 	}
-	
+
 .comment.row.comment--deep .comment-body .comment.row,
 .comment--deep .row.comment {
 	padding-right: 0;
 	padding-bottom: 0;
 }
-	
+
 /*--------------------------------------------------
 Comment Forms
--------------------------------------------------- */	
+-------------------------------------------------- */
 .comment_reply textarea {
 	max-width: 100%;
 	border: none;
@@ -789,9 +789,9 @@ Comment Forms
 	.comment_reply textarea:-ms-input-placeholder { color:#444; }
 	.comment_reply textarea:-moz-placeholder { color:#444; }
 */
-	.comment_reply textarea:focus { 
+	.comment_reply textarea:focus {
 		color: #000;
-		outline: medium none;		
+		outline: medium none;
 		-moz-box-shadow: 0 0 5px #fff;
 		-webkit-box-shadow: 0 0 5px #fff;
 		box-shadow: 0 0 5px #fff;
@@ -799,25 +799,25 @@ Comment Forms
 
 .comment_reply .button {
     float: left;
-}    
+}
 .comment_reply .submit{
 	float: right;
-	font-weight: normal;	
-	padding: 5px 8px 4px;	
+	font-weight: normal;
+	padding: 5px 8px 4px;
 }
 	.comment_reply .button-group { margin-top: -1px; }
-    .comment-controls.button-group { 
-        display: block; 
+    .comment-controls.button-group {
+        display: block;
         text-align: right;
     }
-        .form-wrap .comment-controls .button { 
-            padding-left: 12px; 
-            padding-right: 12px;           
+        .form-wrap .comment-controls .button {
+            padding-left: 12px;
+            padding-right: 12px;
         }
-	
+
 	/* re-ordering and re-styling on purpose so that the tab control doesn't get screwed-up */
 	.comment_reply .button-group .button.submit {
-		margin-left: -1px; 	
+		margin-left: -1px;
 		-moz-border-radius-bottomleft: 0;
 		-webkit-border-bottom-left-radius: 0;
 		border-bottom-left-radius: 0;
@@ -829,8 +829,8 @@ Comment Forms
 		border-top-right-radius: 0px;
 		border-bottom-right-radius: 3px;
 		-moz-border-radius-bottomright: 3px;
-		-webkit-border-bottom-right-radius: 3px;		
-	}	
+		-webkit-border-bottom-right-radius: 3px;
+	}
 	.comment_reply .button-group > .button:nth-child(2) {
 		margin-left: 0;
 		-webkit-border-bottom-left-radius: 3px;
@@ -841,16 +841,16 @@ Comment Forms
 		-moz-border-radius-topleft: 0px;
 	}
 	.comment_reply .button-group > .button:last-child {
-		-moz-border-radius-topright: 0px;	
+		-moz-border-radius-topright: 0px;
 		-webkit-border-top-right-radius: 0px;
 		border-top-right-radius: 0px;
 		-moz-border-radius-bottomright: 0px;
 		-webkit-border-bottom-right-radius: 0px;
-		border-bottom-right-radius: 0px;			
+		border-bottom-right-radius: 0px;
 	}
 
 
-@media only screen and (max-width: 65em) {	
+@media only screen and (max-width: 65em) {
 
 .thread-header, .thread, .uploaded, .uploaded--title  {
 	margin-left: 0;
@@ -865,7 +865,7 @@ Comment Forms
         left: 0;
         margin-left: 0;
     }
-	
+
 	/* Admins have a lot of buttons... simplify it for them. */
 	.loggedin--admin .thread__foot a {
 		padding: 0 12px;
@@ -876,7 +876,7 @@ Comment Forms
 	.loggedin--admin .thread__foot__icon {
 		left: 0;
 	}
-	
+
 }
 
 @media only screen and (max-width: 40em) {
@@ -885,13 +885,13 @@ Comment Forms
 		float: none;
 		text-align: center;
 	}
-	
+
 	.thread, .thread__body {
 		display: block;
 	}
 	.thread__user {
-		display: block;    
-		width: auto;    
+		display: block;
+		width: auto;
 		border-right: none;
 		border-bottom: 1px solid #d9d9d9;
 		padding-bottom: 5px;
@@ -907,7 +907,7 @@ Comment Forms
 		}
 		.thread__user .userpic {
 			width: 16px;
-			position: absolute; 
+			position: absolute;
 			top: 10px;
 			left: 8px;
 		}
@@ -916,12 +916,12 @@ Comment Forms
 			display: inline;
 			bottom: -2px;
 		}
-	
+
 	.comment .user-avatar,
-	.comment_reply .user-avatar{ 
-		width: 32px; 
-		height: 32px; 
-		line-height: 32px; 
+	.comment_reply .user-avatar{
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
 		font-size: 150%;
 		top: 16px;
 	}
@@ -931,14 +931,14 @@ Comment Forms
 	}
 }
 
-@media only screen and (max-width: 30em) {	
+@media only screen and (max-width: 30em) {
 	.comment .voting { top: 13px; right: -1px; }
 	.voting + .comment-body { margin-right: 0; }
 		.voting + .comment-body p { padding-right: 13px; }
-		.voting + .comment-body .comment-meta { padding-right: 16px; }	
+		.voting + .comment-body .comment-meta { padding-right: 16px; }
 	.comment-body, .comment-body .comment-body, .row.comments .tier1-new { margin: 0; }
 		.comment .user-avatar, .comment_reply .user-avatar { display: none; }
-		.comment-body:after, .comment-body:before { 
+		.comment-body:after, .comment-body:before {
 			display: none;
 		}
 }
